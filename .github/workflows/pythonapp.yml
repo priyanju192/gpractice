@@ -23,3 +23,7 @@ jobs:
         python-version: "3.10"
     - name: Run Script 
       run: python todo.py
+    - name: List files in specific folder
+      run: |
+        echo "Listing files in the target directory:"
+        ls -l
