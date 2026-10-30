@@ -17,13 +17,13 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
+    - name: List files in specific folder
+      run: |
+        echo "Listing files in the target directory:"
+        ls -l
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
     - name: Run Script 
       run: python todo.py
-    - name: List files in specific folder
-      run: |
-        echo "Listing files in the target directory:"
-        ls -l
